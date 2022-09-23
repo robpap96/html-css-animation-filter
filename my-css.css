@@ -1,0 +1,188 @@
+.ex-1-square {
+    transition: 3s;
+}
+
+.ex-1-square:hover {
+    background: red;
+}
+
+.ex-2-square {
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: 1s;
+}
+
+.ex-3-square:hover {
+    border-radius: 100%;
+}
+
+.ex-4-square {
+    transition: 1s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: 1s;
+}
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(0.8) sepia(0.9);
+}
+
+.ex-8-img {
+    transition: 3s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.6) sepia(0.5);
+    border-radius: 18px;
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(0.5) sepia(0.8);
+    border-radius: 18px;
+    transform: scale(1.5);
+}
+
+.ex-10-icon {
+    animation: girare 1s linear infinite;
+}
+
+@keyframes girare {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: girare-75 2s linear;
+}
+@keyframes girare-75 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(310deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: muovi-bordo-superiore 3s linear;
+}
+@keyframes muovi-bordo-superiore {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: muovi-bordo-inferiore 3s linear;
+}
+@keyframes muovi-bordo-inferiore {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: giro-completo-bordi-top 3s linear;
+}
+@keyframes giro-completo-bordi-top {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: giro-completo-bordi-bottom 3s linear;
+}
+@keyframes giro-completo-bordi-bottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
